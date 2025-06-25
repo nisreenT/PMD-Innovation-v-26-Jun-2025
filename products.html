@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="HTML, CSS, JavaScript, php">
+  <meta name="description" content="Medical, Dental, Pharma">
+  <meta name="author" content="Nisreen Terkawi">
+  <meta http-equiv="refresh" content="60">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/logo with white background.png" type="image/x-icon" />
+  <title>Products</title>
+<style>
+    .container2 {
+	min-height: 60vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+    #Items{
+        width: 100%;
+    }
+    .Text_Item{
+        float: left;
+        width: 35%;
+        padding: 10px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .section-title{
+      text-decoration: underline;
+    }
+
+    div > h2{
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    .Image_Item{
+        float: right;
+        width: 65%;
+        padding: 10px;
+        
+    }
+
+    .Image_Item img{
+        border-radius: 100px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        #Items{
+            flex-direction: column;
+        }
+        .Image_Item{
+            justify-items: center;
+        }
+
+    }
+</style>
+
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="index.html">
+            <img class="logo" src="img/logo with white background.png" alt="PMD Innovation logo">
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" data-after="Home">Home</a></li>
+            <li><a href="aboutUs.html" data-after="About">About Us</a></li>
+            <li class="dropdown" ><a href="products.html" class="dropbtn" data-after="Products">Products</a>
+              <div id="dropdownid" class="dropdown-content">
+                <a href="#MedicalEquipment">Medical Equipment</a>
+                <a href="#MedicalSupplies">Medical Supplies</a>
+                <a href="#DentalEquipment">Dental Equipment</a>
+                <a href="#DentalSupplies">Dental Supplies</a>
+                <a href="#Pharmaceutical">Pharmaceutical</a>
+            </div>
+            </li>
+            <li class="dropdown"><a href="newsandblog.html" data-after="News&Blog" class="dropbtn">News &amp; Blog</a>
+              <div id="dropdownid" class="dropdown-content">
+                <a href="AvailableJobs.html">Available jobs</a>
+                <a href="Exhibitions.html">Exhibitions</a>
+            </div>
+          </li>
+          <li><a href="contact.html" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1></h1>
+        <h1>PMD Innovation <span></span></h1>
+        <h1>Our Products<span></span></h1>
+        <!--<a href="#projects" type="button" class="cta">Portfolio</a>-->
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Items Section -->
+
+  <section id="MedicalEquipment" id="service ">
+    <div class="service container2">
+      <div class="service-top">
+        <h1 class="section-title">Me<span>di</span>cal eq<span>uip</span>ment</h1>
+        <h2>Ultrasounds (Wisonic)</h2>
+      </div>
+    </div>
+  </section>
+<!--Item 1-->
+  <div id="Items" class="container2">
+  <div class="Text_Item">
+        <h1>Piloter</h1>
+        <h2><a href="https://www.wisonic.com/en/list_24/185.html">https://www.wisonic.com/en/list_24/185.html</a></h2>
+  </div>
+    
+    <div class="Image_Item">
+        <center>
+      <img src="./img/UltraSoundPiloter.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:700px">
+    </center>
+    </div>
+  </div>
+
+
+<!--Item 2-->
+<div id="Items" class="container2">
+    <div class="Text_Item">
+          <h1>Clover</h1>
+          <h2><a href="https://www.wisonic.com/en/list_26/189.html">https://www.wisonic.com/en/list_24/185.html</a></h2>
+    </div>
+      
+      <div class="Image_Item">
+          <center>
+        <img src="./img/UltraSoundClover.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:700px">
+      </center>
+      </div>
+    </div>
+
+<!--Item 3-->
+    <div id="Items" class="container2">
+        <div class="Text_Item">
+              <h1>Labat</h1>
+              <h2><a href="https://www.wisonic.com/en/list_23/103.html">https://www.wisonic.com/en/list_23/103.html</a></h2>
+        </div>
+          
+          <div class="Image_Item">
+              <center>
+            <img src="./img/UltraSoundLabat.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:700px">
+          </center>
+          </div>
+        </div>
+
+<!--Item 4-->
+        <div id="Items" class="container2">
+            <div class="Text_Item">
+                  <h1>Navi</h1>
+                  <h2><a href="https://www.wisonic.com/en/list_23/75.html">https://www.wisonic.com/en/list_23/75.html</a></h2>
+            </div>
+              
+              <div class="Image_Item">
+                  <center>
+                <img src="./img/UltraSoundNavi.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:700px">
+              </center>
+              </div>
+            </div>
+<!--Item 5-->
+            <div id="Items" class="container2">
+                <div class="Text_Item">
+                      <h1>Lotus</h1>
+                      <h2><a href="https://www.wisonic.com/en/list_84/313.html">https://www.wisonic.com/en/list_84/313.html</a></h2>
+                </div>
+                  
+                  <div class="Image_Item">
+                      <center>
+                    <img src="./img/UltraSoundLotus.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:700px">
+                  </center>
+                  </div>
+                </div>
+
+    <hr>
+
+    <section id="MedicalSupplies" id="service">
+        <div class="service container2">
+          <div class="service-top">
+            <h1 class="section-title">Me<span>di</span>cal s<span>up</span>plies</h1>
+            <h2></h2>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section id="DentalEquipment" id="service">
+        <div class="service container2">
+          <div class="service-top">
+            <h1 class="section-title">Den<span>ta</span>l Eq<span>uip</span>ment</h1>
+            <h2></h2>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section id="DentalSupplies" id="service">
+        <div class="service container2">
+          <div class="service-top">
+            <h1 class="section-title">Den<span>ta</span>l s<span>up</span>plies</h1>
+            <h2></h2>
+          </div>
+        </div>
+      </section>
+
+      <div id="Items" class="container2">
+        <div class="Text_Item">
+              <h1>Sawuat Surgical</h1>
+              <h2><a href="https://sawuatsurgical.com/maincate.php">https://sawuatsurgical.com/maincate.php</a></h2>
+        </div>
+          
+          <div class="Image_Item">
+              <center>
+            <img src="./img/SawuatSurgical.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:700px">
+          </center>
+          </div>
+        </div>
+
+      <hr>
+
+      <section id="Pharmaceutical" id="service">
+        <div class="service container2">
+          <div class="service-top">
+            <h1 class="section-title">Ph<span>ar</span>mace<span>uti</span>cal</h1>
+            <h2></h2>
+          </div>
+        </div>
+      </section>
+ 
+
+  <!--End Items-->
+ 
+ 
+  <section id="footer">
+    <div class="footer container">
+
+      <div id="footer_left">
+      <div class="brand">
+        <h1><span>PMD</span> Inn<span>o</span>vati<span>o</span>n</h1>
+      </div>
+      <h2>Pharma<span> * </span> Medical<span> * </span> Dental</h2>
+    </div>
+
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/?size=100&id=118498&format=png&color=000000.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/?size=100&id=48839&format=png&color=000000.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/?size=100&id=8HtzWaaC5y60&format=png&color=000000.png" /></a>
+        </div> 
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/?size=100&id=42961&format=png&color=000000.png" /></a>
+        </div>
+
+        
+      </div>
+      <p id="p1_footer">Copyright © <span id="year"> </span> PMD Innovation</p>
+      <p id="p2_footer">Powered by PMD Innovation</p>
+    </div>
+  </section> 
+  <!-- End Footer -->
+
+  <script src="./app.js"></script>
+</body>
+
+</html>

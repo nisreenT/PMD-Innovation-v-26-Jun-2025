@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="HTML, CSS, JavaScript, php">
+  <meta name="description" content="Medical, Dental, Pharma">
+  <meta name="author" content="Nisreen Terkawi">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="icon" href="img/logo with white background.png" type="image/x-icon" />
+  <title>Contact Us</title>
+
+
+ <!-- Google reCAPTCHA CDN -->
+ <script>
+  function onLoadCallback(){
+      g-recaptcha.render('divRecaptcha',{
+          sitekey: '6LcYTsgqAAAAADnapl0oL6efFRgXXdSOPP_aJMQC',
+          callback: successCallback(),
+      });
+  }
+</script>
+
+ <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="index.html">
+            <img class="logo" src="img/logo with white background.png" alt="PMD Innovation logo">
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" data-after="Home">Home</a></li>
+            <li><a href="aboutUs.html" data-after="About">About Us</a></li>
+            <li class="dropdown" ><a class="dropbtn" data-after="Products">Products</a>
+              <div id="dropdownid" class="dropdown-content">
+                <a href="MedicalEquipment.html">Medical Equipment</a>
+                <a href="MedicalSupplies.html">Medical Supplies</a>
+                <a href="DentalEquipment.html">Dental Equipment</a>
+                <a href="DentalSupplies.html">Dental Supplies</a>
+                <a href="Pharmaceutical.html">Pharmaceutical</a>
+            </div>
+            </li>
+            <li class="dropdown"><a href="newsandblog.html" data-after="News&Blog" class="dropbtn">News &amp; Blog</a>
+              <div id="dropdownid" class="dropdown-content">
+                <a href="AvailableJobs.html">Available jobs</a>
+                <a href="Exhibitions.html">Exhibitions</a>
+            </div>
+          </li>
+          <li><a href="contact.html" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1></h1>
+        <h1>PMD Innovation <span></span></h1>
+        <h1>Pharma, Medical, Dental <span></span></h1>
+        <!--<a href="#projects" type="button" class="cta">Portfolio</a>-->
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Contact Section -->
+  <section id="service">
+    <div class="service container" style="margin-bottom: 100px; text-align:center;">
+      <div class="service-top">
+        <h1 class="section-title">Contact <span>Us</span></h1>
+        <p>For more information about our products and service, or to request a consultation,
+            please reach out to us at:</p>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <form class="contact-form" id="contact-form" method="POST" action="sendmail.php">
+    <div class="form-row form-error" style="display:none;"></div>
+    <h1 style="text-align: center; color:#1776ca; font-weight: 600; font-family: emoji; font-size: xxx-large;">Contact Form</h1>
+    <div class="form-row">
+      <label for="contact-form-name">Name:<span class="error"> *</span></label>
+      <input id="contact-form-name" class="form-input" type="text" name="name" required>
+    </div>
+    <div class="form-row">
+      <label for="contact-form-email">Email:<span class="error"> *</span></label>
+      <input id="contact-form-email" class="form-input" type="email" name="email" required>
+    </div>
+    <div class="form-row">
+      <label for="contact-form-phone">Phone:</label>
+      <input id="contact-form-phone" class="form-input" type="tel" name="phone">
+    </div>
+    <div class="form-row">
+      <label for="contact-form-phone">Subject:<span class="error"> *</span></label>
+      <input id="contact-form-subject" class="form-input" type="text" name="subject" required>
+    </div>
+    <div class="form-row">
+      <label for="contact-form-message">Message:<span class="error"> *</span></label>
+      <textarea id="contact-form-message" class="form-input" cols="20" rows="5" name="message"  required></textarea>
+    </div>
+    
+     <!-- div to show reCAPTCHA -->
+     <div class="g-recaptcha" data-sitekey="6LcYTsgqAAAAADnapl0oL6efFRgXXdSOPP_aJMQC"></div>
+
+    <button id="button-id" type="submit">Submit</button>
+  </form>
+
+
+
+
+
+  <!-- Contact Section -->
+   <!--
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>Info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+1 234 123 12</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>info@pmdinnovation.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>Syria, Hama.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+  <!-- End Contact Section -->
+
+<!--Google map section-->
+  <section id="map">
+    <div class="map " style="margin-bottom: 0px;">
+        
+      <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3263.2799421802815!2d36.750521!3d35.124687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzXCsDA3JzI4LjkiTiAzNsKwNDUnMDEuOSJF!5e0!3m2!1sar!2ssa!4v1740957917487!5m2!1sar!2ssa" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!--End Google map section-->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+
+      <div id="footer_left">
+      <div class="brand">
+        <h1><span>PMD</span> Inn<span>o</span>vati<span>o</span>n</h1>
+      </div>
+      <h2>Pharma<span> * </span> Medical<span> * </span> Dental</h2>
+    </div>
+
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/profile.php?id=61574007082303&mibextid=wwXIfr&mibextid=wwXIfr"><img src="https://img.icons8.com/?size=100&id=118498&format=png&color=000000.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.linkedin.com/company/pmd-innovation/"><img src="https://img.icons8.com/?size=100&id=42823&format=png&color=000000.png" /></a>
+        </div>
+        <!--
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/?size=100&id=8HtzWaaC5y60&format=png&color=000000.png" /></a>
+        </div> 
+        -->
+        
+        <div class="social-item">
+          <a href="https://wa.me/+963938557770"><img src="https://img.icons8.com/?size=100&id=42961&format=png&color=000000.png" /></a>
+        </div>
+
+        
+      </div>
+      <p id="p1_footer">Copyright © <span id="year"> </span> PMD Innovation</p>
+      <p id="p2_footer">Powered by PMD Innovation</p>
+    </div>
+  </section> 
+  <!-- End Footer -->
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
